@@ -1,8 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
+
+
+const HomeContainerStyled =  styled.main`
+  diplay: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+`;
 
 const Home = () => {
   return (
-    <div>index</div>
+    <HomeContainerStyled>Index</HomeContainerStyled>
   )
 }
 
