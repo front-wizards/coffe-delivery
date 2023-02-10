@@ -12,8 +12,8 @@ export const Header = () => {
             />
         </HeaderLogoStyled>
         <HeaderCartStyled>
-            <span>Floripa</span>
-            <span>Carrinho</span>
+            <span className="box-purple">Floripa, SC</span>
+            <span className="box-orange">C</span>
         </HeaderCartStyled>
     </HeaderContainerStyled>
   )
