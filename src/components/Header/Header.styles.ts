@@ -28,24 +28,23 @@ export const HeaderCartStyled = styled.div`
     }
 
     & .box-purple {
-        background-color: purple;
-        padding: 10px;
-        min-width: 100px;
+        background-color: ${({ theme }) => theme.lightPurple};
+        padding: 8px;
         text-align: center;
-        color: white;
+        color: ${({ theme }) => theme.darkPurple};
         font-weight: bold;
-        border: 4px solid purple;
+        border: 4px solid ${({ theme }) => theme.lightPurple};
         border-radius: 5px;
     }
 
-    & .box-orange {
-        background-color: orange;
+    & .box-yellow {
+        background-color: ${({ theme }) => theme.lightYellow};
         padding: 10px;
         min-width: 30px;
         text-align: center;
-        color: white;
+        color: ${({ theme }) => theme.darkYellow};;
         font-weight: bold;
-        border: 4px solid orange;
+        border: 4px solid ${({ theme }) => theme.lightYellow};
         border-radius: 5px;
     }
 

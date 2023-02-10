@@ -1,4 +1,7 @@
-import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
 import Picture from '../Picture/Picture'
 import { HeaderCartStyled, HeaderContainerStyled, HeaderLogoStyled } from './Header.styles'
 
@@ -12,8 +15,17 @@ export const Header = () => {
             />
         </HeaderLogoStyled>
         <HeaderCartStyled>
-            <span className="box-purple">Floripa, SC</span>
-            <span className="box-orange">C</span>
+            <span className="box-purple">
+              <span>
+                <FontAwesomeIcon icon={faLocationDot} />
+              </span>
+              <span>
+                Floripa, SC
+              </span>
+            </span>
+            <span className="box-yellow">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </span>
         </HeaderCartStyled>
     </HeaderContainerStyled>
   )
