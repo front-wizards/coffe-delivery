@@ -1,6 +1,9 @@
+import { faClock, faSquare } from '@fortawesome/free-regular-svg-icons'
+import { faCartShopping, faLocationDot, faMugHot } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import Picture from '../Picture/Picture'
-import { IntroContainerStyled, IntroBigPictureStyled } from './Intro.styles'
+import { IntroContainerStyled, IntroBigPictureStyled, IntroItemSectionStyled, IntroIconStyled, IntroTextStyled, IntroTitleStyled, IntroSubTitleStyled } from './Intro.styles'
 
 
 
@@ -8,26 +11,26 @@ const Intro = () => {
   return (
     <IntroContainerStyled>
         <div>
-            <h1>
+            <IntroTitleStyled>
                 Encontre o café perfeito para qualquer hora do dia
-            </h1>
-            <p>
+            </IntroTitleStyled>
+            <IntroSubTitleStyled>
                 Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
-            </p>
-            <div>
+            </IntroSubTitleStyled>
+            <IntroItemSectionStyled>
                 <span>
                     <p>
-                        <span>
-                            icon
-                        </span>
+                        <IntroIconStyled>
+                            <FontAwesomeIcon icon={faCartShopping} />
+                        </IntroIconStyled>
                         <span>
                             Compra simples e segura
                         </span>
                     </p>
                     <p>
-                        <span>
-                            icon
-                        </span>
+                    <IntroIconStyled>
+                        <FontAwesomeIcon icon={faClock} />
+                        </IntroIconStyled>
                         <span>
                             Entrega rápida e rastreada
                         </span>
@@ -35,23 +38,23 @@ const Intro = () => {
                 </span>
                 <span>
                     <p>
-                        <span>
-                            icon
-                        </span>
+                    <IntroIconStyled>
+                        <FontAwesomeIcon icon={faSquare} />
+                        </IntroIconStyled>
                         <span>
                             Embalagem mantem o café intacto
                         </span>
                     </p>
                     <p>
-                        <span>
-                            icon
-                        </span>
+                    <IntroIconStyled>
+                        <FontAwesomeIcon icon={faMugHot} />
+                        </IntroIconStyled>
                         <span>
                             O café chega fresquinho até você
                         </span>
                     </p>
                 </span>
-            </div>
+            </IntroItemSectionStyled>
         </div>
         <IntroBigPictureStyled>
             <Picture image={'coffee.png'} dimensions={{width: 476, height: 360}} />
