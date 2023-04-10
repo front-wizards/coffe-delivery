@@ -1,11 +1,11 @@
 import React from 'react'
-import Intro from '../../components/Intro/Intro'
+import Banner from '../../components/Banner/Banner'
 import { HomeContainerStyled } from './Home.styles'
 
 const Home = () => {
   return (
     <HomeContainerStyled>
-      <Intro/>
+      <Banner/>
     </HomeContainerStyled>
   )
 }
