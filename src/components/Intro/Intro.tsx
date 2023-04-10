@@ -1,7 +1,10 @@
-import { faClock, faSquare } from '@fortawesome/free-regular-svg-icons'
-import { faCartShopping, faLocationDot, faMugHot } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+
+import { BsFillCartFill } from 'react-icons/bs'
+import { BsFillClockFill } from 'react-icons/bs'
+import { VscPackage } from 'react-icons/vsc'
+import { GiCoffeeCup } from 'react-icons/gi'
+
 import Picture from '../Picture/Picture'
 import { IntroContainerStyled, IntroBigPictureStyled, IntroItemSectionStyled, IntroIconStyled, IntroTextStyled, IntroTitleStyled, IntroSubTitleStyled } from './Intro.styles'
 
@@ -21,7 +24,7 @@ const Intro = () => {
                 <span>
                     <p>
                         <IntroIconStyled>
-                            <FontAwesomeIcon icon={faCartShopping} />
+                            <BsFillCartFill />
                         </IntroIconStyled>
                         <span>
                             Compra simples e segura
@@ -29,7 +32,7 @@ const Intro = () => {
                     </p>
                     <p>
                     <IntroIconStyled>
-                        <FontAwesomeIcon icon={faClock} />
+                        <BsFillClockFill />
                         </IntroIconStyled>
                         <span>
                             Entrega rápida e rastreada
@@ -39,7 +42,7 @@ const Intro = () => {
                 <span>
                     <p>
                     <IntroIconStyled>
-                        <FontAwesomeIcon icon={faSquare} />
+                        <VscPackage />
                         </IntroIconStyled>
                         <span>
                             Embalagem mantem o café intacto
@@ -47,7 +50,7 @@ const Intro = () => {
                     </p>
                     <p>
                     <IntroIconStyled>
-                        <FontAwesomeIcon icon={faMugHot} />
+                        <GiCoffeeCup />
                         </IntroIconStyled>
                         <span>
                             O café chega fresquinho até você
