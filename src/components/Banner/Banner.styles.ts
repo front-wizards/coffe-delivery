@@ -1,35 +1,35 @@
 import styled from "styled-components";
 
-export const IntroContainerStyled = styled.main`
+export const BannerContainerStyled = styled.main`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 `;
 
-export const IntroTitleStyled = styled.h1`
+export const BannerTitleStyled = styled.h1`
     font-weight: 900;
     font-size: 4vw;
 `;
 
-export const IntroSubTitleStyled = styled.h5`
+export const BannerSubTitleStyled = styled.h5`
     font-weight: 100;
     font-size: 1rem;
 `;
 
-export const IntroBigPictureStyled = styled.div`
+export const BannerBigPictureStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
 `;
 
-export const IntroItemSectionStyled = styled.section`
+export const BannerItemSectionStyled = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
 `;
 
-export const IntroIconStyled = styled.span`
+export const BannerIconStyled = styled.span`
     background-color:${({ theme }) => theme.lightYellow};
     border: 4px solid ${({ theme }) => theme.lightYellow};
     //border-radius: 10px;
@@ -38,6 +38,6 @@ export const IntroIconStyled = styled.span`
     margin-right: 10px;
 `;
 
-export const IntroTextStyled = styled.section`
+export const BannerTextStyled = styled.section`
     margin-right: 10px;
 `;
