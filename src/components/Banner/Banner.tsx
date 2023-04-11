@@ -1,7 +1,10 @@
-import { faClock, faSquare } from '@fortawesome/free-regular-svg-icons'
-import { faCartShopping, faLocationDot, faMugHot } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+
+import { BsFillCartFill } from 'react-icons/bs'
+import { BsFillClockFill } from 'react-icons/bs'
+import { VscPackage } from 'react-icons/vsc'
+import { GiCoffeeCup } from 'react-icons/gi'
+
 import Picture from '../Picture/Picture'
 import { BannerContainerStyled, BannerBigPictureStyled, BannerItemSectionStyled, BannerIconStyled, BannerTextStyled, BannerTitleStyled, BannerSubTitleStyled } from './Banner.styles'
 
@@ -21,15 +24,15 @@ const Banner = () => {
                 <span>
                     <p>
                         <BannerIconStyled>
-                            <FontAwesomeIcon icon={faCartShopping} />
+                            <BsFillCartFill />
                         </BannerIconStyled>
                         <span>
                             Compra simples e segura
                         </span>
                     </p>
                     <p>
-                    <BannerIconStyled>
-                        <FontAwesomeIcon icon={faClock} />
+                        <BannerIconStyled>
+                            <BsFillClockFill />
                         </BannerIconStyled>
                         <span>
                             Entrega rápida e rastreada
@@ -38,16 +41,16 @@ const Banner = () => {
                 </span>
                 <span>
                     <p>
-                    <BannerIconStyled>
-                        <FontAwesomeIcon icon={faSquare} />
+                        <BannerIconStyled>
+                            <VscPackage />
                         </BannerIconStyled>
                         <span>
                             Embalagem mantem o café intacto
                         </span>
                     </p>
                     <p>
-                    <BannerIconStyled>
-                        <FontAwesomeIcon icon={faMugHot} />
+                        <BannerIconStyled>
+                            <GiCoffeeCup />
                         </BannerIconStyled>
                         <span>
                             O café chega fresquinho até você
