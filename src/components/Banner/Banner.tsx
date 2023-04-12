@@ -3,34 +3,34 @@ import { faCartShopping, faLocationDot, faMugHot } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import Picture from '../Picture/Picture'
-import { IntroContainerStyled, IntroBigPictureStyled, IntroItemSectionStyled, IntroIconStyled, IntroTextStyled, IntroTitleStyled, IntroSubTitleStyled } from './Intro.styles'
+import { BannerContainerStyled, BannerBigPictureStyled, BannerItemSectionStyled, BannerIconStyled, BannerTextStyled, BannerTitleStyled, BannerSubTitleStyled } from './Banner.styles'
 
 
 
-const Intro = () => {
+const Banner = () => {
   return (
-    <IntroContainerStyled>
+    <BannerContainerStyled>
         <div>
-            <IntroTitleStyled>
+            <BannerTitleStyled>
                 Encontre o café perfeito para qualquer hora do dia
-            </IntroTitleStyled>
-            <IntroSubTitleStyled>
+            </BannerTitleStyled>
+            <BannerSubTitleStyled>
                 Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
-            </IntroSubTitleStyled>
-            <IntroItemSectionStyled>
+            </BannerSubTitleStyled>
+            <BannerItemSectionStyled>
                 <span>
                     <p>
-                        <IntroIconStyled>
+                        <BannerIconStyled>
                             <FontAwesomeIcon icon={faCartShopping} />
-                        </IntroIconStyled>
+                        </BannerIconStyled>
                         <span>
                             Compra simples e segura
                         </span>
                     </p>
                     <p>
-                    <IntroIconStyled>
+                    <BannerIconStyled>
                         <FontAwesomeIcon icon={faClock} />
-                        </IntroIconStyled>
+                        </BannerIconStyled>
                         <span>
                             Entrega rápida e rastreada
                         </span>
@@ -38,29 +38,29 @@ const Intro = () => {
                 </span>
                 <span>
                     <p>
-                    <IntroIconStyled>
+                    <BannerIconStyled>
                         <FontAwesomeIcon icon={faSquare} />
-                        </IntroIconStyled>
+                        </BannerIconStyled>
                         <span>
                             Embalagem mantem o café intacto
                         </span>
                     </p>
                     <p>
-                    <IntroIconStyled>
+                    <BannerIconStyled>
                         <FontAwesomeIcon icon={faMugHot} />
-                        </IntroIconStyled>
+                        </BannerIconStyled>
                         <span>
                             O café chega fresquinho até você
                         </span>
                     </p>
                 </span>
-            </IntroItemSectionStyled>
+            </BannerItemSectionStyled>
         </div>
-        <IntroBigPictureStyled>
+        <BannerBigPictureStyled>
             <Picture image={'coffee.png'} dimensions={{width: 476, height: 360}} />
-        </IntroBigPictureStyled>
-    </IntroContainerStyled>
+        </BannerBigPictureStyled>
+    </BannerContainerStyled>
   )
 }
 
-export default Intro
+export default Banner
