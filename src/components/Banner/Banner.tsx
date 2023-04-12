@@ -24,15 +24,15 @@ const Banner = () => {
                 <span>
                     <p>
                         <BannerIconStyled>
-                            <FontAwesomeIcon icon={faCartShopping} />
+                            <BsFillCartFill />
                         </BannerIconStyled>
                         <span>
                             Compra simples e segura
                         </span>
                     </p>
                     <p>
-                    <BannerIconStyled>
-                        <FontAwesomeIcon icon={faClock} />
+                        <BannerIconStyled>
+                            <BsFillClockFill />
                         </BannerIconStyled>
                         <span>
                             Entrega rápida e rastreada
@@ -41,16 +41,16 @@ const Banner = () => {
                 </span>
                 <span>
                     <p>
-                    <BannerIconStyled>
-                        <FontAwesomeIcon icon={faSquare} />
+                        <BannerIconStyled>
+                            <VscPackage />
                         </BannerIconStyled>
                         <span>
                             Embalagem mantem o café intacto
                         </span>
                     </p>
                     <p>
-                    <BannerIconStyled>
-                        <FontAwesomeIcon icon={faMugHot} />
+                        <BannerIconStyled>
+                            <GiCoffeeCup />
                         </BannerIconStyled>
                         <span>
                             O café chega fresquinho até você
