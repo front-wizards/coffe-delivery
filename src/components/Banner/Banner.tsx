@@ -1,7 +1,10 @@
-import { faClock, faSquare } from '@fortawesome/free-regular-svg-icons'
-import { faCartShopping, faLocationDot, faMugHot } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+
+import { BsFillCartFill } from 'react-icons/bs'
+import { BsFillClockFill } from 'react-icons/bs'
+import { VscPackage } from 'react-icons/vsc'
+import { GiCoffeeCup } from 'react-icons/gi'
+
 import Picture from '../Picture/Picture'
 import { BannerContainerStyled, BannerBigPictureStyled, BannerItemSectionStyled, BannerIconStyled, BannerTextStyled, BannerTitleStyled, BannerSubTitleStyled } from './Banner.styles'
 
