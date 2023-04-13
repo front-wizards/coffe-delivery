@@ -1,12 +1,12 @@
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
-import { HomeContainerStyled } from './Home.styles'
+import { StyledHomeContainer } from './Home.styles'
 
 const Home = () => {
   return (
-    <HomeContainerStyled>
+    <StyledHomeContainer>
       <Banner/>
-    </HomeContainerStyled>
+    </StyledHomeContainer>
   )
 }
 

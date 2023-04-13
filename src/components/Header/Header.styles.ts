@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const HeaderContainerStyled = styled.header`
+export const StyledHeaderContainer = styled.header`
     display: flex;
     height: 50px;
     align-items: center;
@@ -9,14 +9,14 @@ export const HeaderContainerStyled = styled.header`
     padding: 32px 0 32px 0;
 `
 
-export const HeaderLogoStyled = styled.div`
+export const StyledHeaderLogo = styled.div`
     display: flex;
     justify-content: flex-start;
     width: 100px;
     //margin: auto;
 `
 
-export const HeaderCartStyled = styled.div`
+export const StyledHeaderCart= styled.div`
     display: flex;
     justify-content: flex-end;
     widith: 200px;
@@ -47,5 +47,4 @@ export const HeaderCartStyled = styled.div`
         border: 4px solid ${({ theme }) => theme.lightYellow};
         border-radius: 5px;
     }
-
 `

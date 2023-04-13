@@ -3,18 +3,18 @@ import { BsCartCheckFill } from 'react-icons/bs'
 
 
 import Picture from '../Picture/Picture'
-import { HeaderCartStyled, HeaderContainerStyled, HeaderLogoStyled } from './Header.styles'
+import { StyledHeaderCart, StyledHeaderContainer, StyledHeaderLogo } from './Header.styles'
 
 export const Header = () => {
   return (
-    <HeaderContainerStyled>
-        <HeaderLogoStyled >
+    <StyledHeaderContainer>
+        <StyledHeaderLogo >
             <Picture
                 image="Logo.png"
                 dimensions={{width: 100, height: 50}}
                 />
-        </HeaderLogoStyled>
-        <HeaderCartStyled>
+        </StyledHeaderLogo>
+        <StyledHeaderCart>
             <span className="box-purple">
               <span>
                 <ImLocation2 />
@@ -26,7 +26,7 @@ export const Header = () => {
             <span className="box-yellow">
               <BsCartCheckFill/>
             </span>
-        </HeaderCartStyled>
-    </HeaderContainerStyled>
+        </StyledHeaderCart>
+    </StyledHeaderContainer>
   )
 }
