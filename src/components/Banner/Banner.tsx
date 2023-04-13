@@ -60,7 +60,7 @@ const Banner = () => {
             </StyledBannerItemSection>
         </div>
         <StyledBannerBigPicture>
-            <Picture image={'coffee.png'} dimensions={{width: 476, height: 360}} />
+            <Picture image={'coffee.png'} dimensions={{width: 476, height: 360}} isBig={true} />
         </StyledBannerBigPicture>
     </StyledBannerContainer>
   )
