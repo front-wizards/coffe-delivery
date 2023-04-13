@@ -60,13 +60,4 @@ export const StyledHeaderCart= styled.div`
         border: 4px solid ${({ theme }) => theme.lightYellow};
         border-radius: 5px;
     }
-    @media only screen and (max-width: 600px) {
-        height: auto;
-        width: 50px;
-      }
-    
-      @media only screen and (max-width: 600px) {
-        height: 75px;
-        width: auto;
-      }
 `
