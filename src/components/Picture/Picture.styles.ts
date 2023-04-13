@@ -6,7 +6,7 @@ export const StyledPicture = styled.img`
     width: auto;
   }
 
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1000px) {
     height: 250px;
     width: auto;
   }
@@ -23,6 +23,11 @@ export const StyledPicture = styled.img`
 
   @media only screen and (max-width: 600px) {
     height: 100px;
+    width: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 75px;
     width: auto;
   }
 `;

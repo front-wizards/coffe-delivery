@@ -24,12 +24,34 @@ export const StyledBannerBigPicture = styled.div`
     justify-content: center;
     align-items: center;
     padding-left: 10px;
+    @media only screen and (max-width: 480px) {
+        height: auto;
+        width: auto;
+      }
 `;
 
 export const StyledBannerItemSection = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
+    
+    @media only screen and (max-width: 1100px) {
+        font-size: 0.75em;
+        display: flex;
+        
+      }
+
+    @media only screen and (max-width: 800px) {
+        font-size: 0.75em;
+        display: flex;
+        
+      }
+    
+      @media only screen and (max-width: 750px) {
+        font-size: 0.5em;
+        
+      }
 `;
 
 export const StyledBannerIcon = styled.span`

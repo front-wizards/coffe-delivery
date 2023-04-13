@@ -21,7 +21,7 @@ const Banner = () => {
                 Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
             </StyledBannerSubTitle>
             <StyledBannerItemSection>
-                <span>
+                <div>
                     <p>
                         <StyledBannerIcon>
                             <BsFillCartFill />
@@ -38,8 +38,8 @@ const Banner = () => {
                             Entrega rápida e rastreada
                         </span>
                     </p>
-                </span>
-                <span>
+                </div>
+                <div>
                     <p>
                         <StyledBannerIcon>
                             <VscPackage />
@@ -56,7 +56,7 @@ const Banner = () => {
                             O café chega fresquinho até você
                         </span>
                     </p>
-                </span>
+                </div>
             </StyledBannerItemSection>
         </div>
         <StyledBannerBigPicture>
