@@ -10,6 +10,7 @@ export const Header = () => {
     <StyledHeaderContainer>
         <StyledHeaderLogo >
             <Picture
+                isBig={false}
                 image="Logo.png"
                 dimensions={{width: 100, height: 50}}
                 />

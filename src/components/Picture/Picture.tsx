@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { StyledPicture } from "./Picture.styles";
 
 interface ImageType {
   width: number;
@@ -8,12 +9,26 @@ interface ImageType {
 interface PictureProps {
   image: string;
   dimensions: ImageType;
+  isBig?: boolean;
 }
 
-const Picture = (props : PictureProps) => {
+const Picture = (props: PictureProps) => {
+  if (props.isBig) {
+    return (
+      <StyledPicture
+        src={props.image}
+        height={`${props.dimensions.height}px`}
+        width={`${props.dimensions.width}px`}
+      />
+    );
+  }
   return (
-    <img src={props.image} height={`${props.dimensions.height}px`} width={`${props.dimensions.width}px`} />
-  )
-}
+    <img
+      src={props.image}
+      height={`${props.dimensions.height}px`}
+      width={`${props.dimensions.width}px`}
+    />
+  );
+};
 
-export default Picture
+export default Picture;
