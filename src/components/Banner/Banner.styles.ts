@@ -4,6 +4,9 @@ export const StyledBannerContainer = styled.main`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-image: url("../../src/assets/Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 export const StyledBannerTitle = styled.h1`
