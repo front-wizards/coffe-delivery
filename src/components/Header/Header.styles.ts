@@ -34,7 +34,7 @@ export const StyledHeaderCart= styled.div`
     justify-content: flex-end;
     width: 200px;
 
-    span {
+    div {
         cursor: pointer;
         margin-left: 20px;
         font-weight: 100;
