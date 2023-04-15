@@ -35,9 +35,11 @@ export const StyledHeaderCart= styled.div`
     width: 200px;
 
     div {
+        display: flex;
+        justify-content: center;
         cursor: pointer;
-        margin-left: 20px;
         font-weight: 100;
+        margin: 0 0 0 5px;
     }
 
     & .box-purple {
