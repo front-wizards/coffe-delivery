@@ -1,17 +1,17 @@
 import React from 'react'
-import { FooterContainerStyled } from './Footer.styles'
+import { StyledFooterContainer } from './Footer.styles'
 
 
 export const Footer = () => {
   return (
-    <FooterContainerStyled>
+    <StyledFooterContainer>
       <span>
         Coffee Delivery
       </span>
       <span>
         version 1.0.0
       </span>
-    </FooterContainerStyled>
+    </StyledFooterContainer>
   )
 }
 
