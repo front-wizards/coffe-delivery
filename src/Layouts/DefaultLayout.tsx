@@ -10,8 +10,10 @@ const DefaultLayout = () => {
     <DefaultLayoutStyled>
         <Header/>
         <Outlet/>
-        <Footer/>
-    </DefaultLayoutStyled>
+        <Footer>
+          Coffee Delivery
+        </Footer>
+      </DefaultLayoutStyled>
   )
 }
 
