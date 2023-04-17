@@ -5,7 +5,7 @@ import { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title?: string;
-  iconName: "purpleCart" | "yellowCart" | "plus" | "minus";
+  iconName?: "purpleCart" | "yellowCart" | "plus" | "minus" | "remove";
 }
 
 export function Button({ iconName, title, ...rest }: ButtonProps) {

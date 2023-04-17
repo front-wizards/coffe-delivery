@@ -26,4 +26,16 @@ describe("Icon", () => {
     const icon = screen.getByTestId("minus-icon");
     expect(icon).toBeInTheDocument();
   });
+
+  it('renders the correct icon when `name` is "remove"', () => {
+    render(<Icon name="remove" />);
+    const icon = screen.getByTestId("remove-icon");
+    expect(icon).toBeInTheDocument();
+  });
+
+  it('renders nothing when `name` is not provided', () => {
+    render(<Icon />);
+    const icon = screen.queryByTestId("icon");
+    expect(icon).not.toBeInTheDocument();
+  });
 });
