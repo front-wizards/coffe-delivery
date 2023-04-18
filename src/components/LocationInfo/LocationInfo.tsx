@@ -15,7 +15,7 @@ const LocationInfo = () => {
 
   async function getCityName(position : coordsType) {
 
-    const googleUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.latitude},${position.longitude}&location_type=RANGE_INTERPOLATED&result_type=street_address&key=${import.meta.env.VITE_API_KEY}`;
+    const googleUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.latitude},${position.longitude}&location_type=RANGE_INTERPOLATED&result_type=street_address&key=${process.env.VITE_API_KEY}`;
 
     const response = await fetch(googleUrl);
     const jsonData = await response.json();
