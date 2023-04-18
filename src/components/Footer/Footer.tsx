@@ -13,7 +13,7 @@ export const Footer = ({children} : FooterProps) => {
         { children }
       </span>
       <span>
-        {`version ${import.meta.env.VITE_VERSION}`}
+        {`version ${process.env.VITE_VERSION}`}
       </span>
     </FooterContainerStyled>
   )
