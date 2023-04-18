@@ -6,7 +6,7 @@ import { Footer } from './Footer'
 
 describe('Footer', () => {
     it('Can render Footer', () => {
-        const { getByText } = render(<Footer />)
-        expect(getByText('Coffee Delivery')).toBeInTheDocument()
+        const { getByText } = render(<Footer >My Coffee Test</Footer>)
+        expect(getByText('My Coffee Test')).toBeInTheDocument()
     })
 })
