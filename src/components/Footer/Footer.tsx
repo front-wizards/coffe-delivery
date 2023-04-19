@@ -1,15 +1,19 @@
 import React from 'react'
 import { StyledFooterContainer } from './Footer.styles'
 
+type FooterProps = {
+  children: React.ReactNode;
+}
 
-export const Footer = () => {
+
+export const Footer = ({children} : FooterProps) => {
   return (
     <StyledFooterContainer>
       <span>
-        Coffee Delivery
+        { children }
       </span>
       <span>
-        version 1.0.0
+        {`version ${process.env.VITE_VERSION}`}
       </span>
     </StyledFooterContainer>
   )
