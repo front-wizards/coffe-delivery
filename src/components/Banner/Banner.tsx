@@ -6,63 +6,63 @@ import { VscPackage } from 'react-icons/vsc'
 import { GiCoffeeCup } from 'react-icons/gi'
 
 import Picture from '../Picture/Picture'
-import { BannerContainerStyled, BannerBigPictureStyled, BannerItemSectionStyled, BannerIconStyled, BannerTextStyled, BannerTitleStyled, BannerSubTitleStyled } from './Banner.styles'
+import { StyledBannerContainer, StyledBannerBigPicture, StyledBannerItemSection, StyledBannerIcon, StyledBannerTitle, StyledBannerSubTitle } from './Banner.styles'
 
 
 
 const Banner = () => {
   return (
-    <BannerContainerStyled>
+    <StyledBannerContainer>
         <div>
-            <BannerTitleStyled>
+            <StyledBannerTitle>
                 Encontre o café perfeito para qualquer hora do dia
-            </BannerTitleStyled>
-            <BannerSubTitleStyled>
+            </StyledBannerTitle>
+            <StyledBannerSubTitle>
                 Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
-            </BannerSubTitleStyled>
-            <BannerItemSectionStyled>
-                <span>
+            </StyledBannerSubTitle>
+            <StyledBannerItemSection>
+                <div>
                     <p>
-                        <BannerIconStyled>
+                        <StyledBannerIcon>
                             <BsFillCartFill />
-                        </BannerIconStyled>
+                        </StyledBannerIcon>
                         <span>
                             Compra simples e segura
                         </span>
                     </p>
                     <p>
-                        <BannerIconStyled>
+                        <StyledBannerIcon>
                             <BsFillClockFill />
-                        </BannerIconStyled>
+                        </StyledBannerIcon>
                         <span>
                             Entrega rápida e rastreada
                         </span>
                     </p>
-                </span>
-                <span>
+                </div>
+                <div>
                     <p>
-                        <BannerIconStyled>
+                        <StyledBannerIcon>
                             <VscPackage />
-                        </BannerIconStyled>
+                        </StyledBannerIcon>
                         <span>
                             Embalagem mantem o café intacto
                         </span>
                     </p>
                     <p>
-                        <BannerIconStyled>
+                        <StyledBannerIcon>
                             <GiCoffeeCup />
-                        </BannerIconStyled>
+                        </StyledBannerIcon>
                         <span>
                             O café chega fresquinho até você
                         </span>
                     </p>
-                </span>
-            </BannerItemSectionStyled>
+                </div>
+            </StyledBannerItemSection>
         </div>
-        <BannerBigPictureStyled>
-            <Picture image={'coffee.png'} dimensions={{width: 476, height: 360}} />
-        </BannerBigPictureStyled>
-    </BannerContainerStyled>
+        <StyledBannerBigPicture>
+            <Picture image={'coffee.png'} dimensions={{width: 476, height: 360}} isBig={true} />
+        </StyledBannerBigPicture>
+    </StyledBannerContainer>
   )
 }
 

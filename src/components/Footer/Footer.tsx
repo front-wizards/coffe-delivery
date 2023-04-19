@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainerStyled } from './Footer.styles'
+import { StyledFooterContainer } from './Footer.styles'
 
 type FooterProps = {
   children: React.ReactNode;
@@ -8,14 +8,14 @@ type FooterProps = {
 
 export const Footer = ({children} : FooterProps) => {
   return (
-    <FooterContainerStyled>
+    <StyledFooterContainer>
       <span>
         { children }
       </span>
       <span>
         {`version ${process.env.VITE_VERSION}`}
       </span>
-    </FooterContainerStyled>
+    </StyledFooterContainer>
   )
 }
 
