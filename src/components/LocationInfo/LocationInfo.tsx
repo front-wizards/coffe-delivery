@@ -44,7 +44,7 @@ export const LocationInfo = () => {
     const jsonData = await response.json();
     const cityName = jsonData.results[0]?.formatted_address ?? '';
     console.log('City full name:', cityName)
-    setCity(cityName?.split(',')[2] ?? 'Somewhere in the world')
+    setCity(cityName?.split(',')[1] ?? 'Somewhere in the world')
   }
 
   return (
