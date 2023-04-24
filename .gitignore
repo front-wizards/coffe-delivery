@@ -29,4 +29,6 @@ reports/
 coverage/
 *.lcov
 
-.env*
+.env
+.env.production
+.env.test
