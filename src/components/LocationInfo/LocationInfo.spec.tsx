@@ -1,5 +1,5 @@
 import React from 'react'
-import {render, screen, fireEvent} from '@testing-library/react'
+import {render, screen, fireEvent, findByTestId} from '@testing-library/react'
 
 import '@testing-library/jest-dom'
 import { LocationInfo, coordsType } from './LocationInfo'
@@ -28,29 +28,33 @@ describe('Get the city name based on latitude and longitude', () => {
         global.navigator.geolocation = mockGeolocation;
     });
 
-      it('Gets Florianópolis as city result when page loads', () => {
-        global.fetch = jest.fn(() =>
-            Promise.resolve({
-                json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[2]]}),
-            }),
-        ) as jest.Mock;
-
-        render(<LocationInfo />)
-        expect(screen.getByTestId('getMyLocation').textContent).toBe('Florianópolis')
-
-    })
-
-    // it('Gets Ribeirão Preto as city result', () => {
+    // it('Gets Florianópolis as city result when page loads', () => {
     //     global.fetch = jest.fn(() =>
     //         Promise.resolve({
-    //             json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[1]]}),
+    //             json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[2]]}),
     //         }),
     //     ) as jest.Mock;
 
-    //     const { getByText } = render(<LocationInfo />)
-    //     fireEvent.click(screen.getByTestId('getMyLocation'))
-    //     expect(getByText('Ribeirão Preto')).toBeInTheDocument()
+    //     render(<LocationInfo />)
+    //     expect(screen.getByTestId('getMyLocation').textContent).toBe('Florianópolis')
+
     // })
+
+    it('Gets Ribeirão Preto as city result', () => {
+        global.fetch = jest.fn(() =>
+            Promise.resolve({
+                json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[1]]}),
+            }),
+        ) as jest.Mock;
+
+        const { getByText } = render(<LocationInfo />)
+        //fireEvent.click(screen.getByTestId('getMyLocation'))
+        //expect(getByText('Ribeirão Preto')).toBeInTheDocument()
+        //expect(findByText('Ribeirão Preto')).toBeInTheDocument()
+        expect(getByText('rio de janeiro')).toBeInTheDocument()
+        fireEvent.click(screen.getByTestId('getMyLocation'))
+        expect(getByText('Ribeirão Preto')).toBeInTheDocument()
+    })
 
     // it('Gets Toronto as city result', () => {
     //     global.fetch = jest.fn(() =>

@@ -4,9 +4,11 @@ import { Icon } from "./Icon";
 
 describe("Icon", () => {
   it('renders the correct icon when `name` is "purpleCart"', () => {
-    render(<Icon name="purpleCart" />);
-    const icon = screen.getByTestId("purpleCart-icon");
-    expect(icon).toBeInTheDocument();
+    const {getByTestId, queryAllByTestId} = render(<Icon name="purpleCart" />);
+    // const icon = screen.getByTestId("purpleCart-icon");
+    // expect(icon).toBeInTheDocument();
+    expect(queryAllByTestId('purpleCart-icon')).toBeVisible();
+
   });
 
   it('renders the correct icon when `name` is "yellowCart"', () => {

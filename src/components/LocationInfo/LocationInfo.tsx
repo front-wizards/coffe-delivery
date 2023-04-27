@@ -9,7 +9,7 @@ export type coordsType = {
 }
 
 export const LocationInfo = () => {
-  const [city, setCity] = useState<string>('')
+  const [city, setCity] = useState<string>('Rio de Janeiro')
 
   useEffect(() => {
     showCurrentPosition()
