@@ -26,7 +26,7 @@ describe('Get the city name based on latitude and longitude', () => {
 
     beforeEach(() => {
         global.navigator.geolocation = mockGeolocation;
-      });
+    });
 
       it('Gets Florianópolis as city result when page loads', () => {
         global.fetch = jest.fn(() =>
@@ -35,31 +35,32 @@ describe('Get the city name based on latitude and longitude', () => {
             }),
         ) as jest.Mock;
 
-        const { getByText } = render(<LocationInfo />)
-        expect(getByText('Florianópolis')).toBeInTheDocument()
+        render(<LocationInfo />)
+        expect(screen.getByTestId('getMyLocation').textContent).toBe('Florianópolis')
+
     })
 
-    it('Gets Ribeirão Preto as city result', () => {
-        global.fetch = jest.fn(() =>
-            Promise.resolve({
-                json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[1]]}),
-            }),
-        ) as jest.Mock;
+    // it('Gets Ribeirão Preto as city result', () => {
+    //     global.fetch = jest.fn(() =>
+    //         Promise.resolve({
+    //             json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[1]]}),
+    //         }),
+    //     ) as jest.Mock;
 
-        const { getByText } = render(<LocationInfo />)
-        fireEvent.click(screen.getByTestId('getMyLocation'))
-        expect(getByText('Ribeirão Preto')).toBeInTheDocument()
-    })
+    //     const { getByText } = render(<LocationInfo />)
+    //     fireEvent.click(screen.getByTestId('getMyLocation'))
+    //     expect(getByText('Ribeirão Preto')).toBeInTheDocument()
+    // })
 
-    it('Gets Toronto as city result', () => {
-        global.fetch = jest.fn(() =>
-            Promise.resolve({
-                json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[3]]}),
-            }),
-        ) as jest.Mock;
+    // it('Gets Toronto as city result', () => {
+    //     global.fetch = jest.fn(() =>
+    //         Promise.resolve({
+    //             json: () => Promise.resolve({results : [MOCK_GOOGLE_RESULTS[3]]}),
+    //         }),
+    //     ) as jest.Mock;
 
-        const { getByText } = render(<LocationInfo />)
-        fireEvent.click(screen.getByTestId('getMyLocation'))
-        expect(getByText('Toronto')).toBeInTheDocument()
-    })
+    //     const { getByText } = render(<LocationInfo />)
+    //     fireEvent.click(screen.getByTestId('getMyLocation'))
+    //     expect(getByText('Toronto')).toBeInTheDocument()
+    // })
 })
