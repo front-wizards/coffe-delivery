@@ -9,7 +9,7 @@ export type coordsType = {
 }
 
 export const LocationInfo = () => {
-  const [city, setCity] = useState<string>('Rio de Janeiro')
+  const [city, setCity] = useState<string>('')
 
   useEffect(() => {
     showCurrentPosition()
@@ -57,7 +57,7 @@ export const LocationInfo = () => {
             <ImLocation2 />
         </div>
         <div onClick={showCurrentPosition} data-testid="getMyLocation">
-            {city}
+          {city}
         </div>
     </div>
   )
