@@ -40,15 +40,30 @@ export const LocationInfo = () => {
     //   }
     // ];
 
+
+    const getCityName = (cityName : string)=> {
+      //2WMR+FM Campinas, SP, Brasil
+      const cityLength = cityName?.split(',').length
+      if (cityLength == 3 && cityName?.split(',')[0].includes("+")) {
+        setCity(cityName.split(',')[0].split(' ')[1])
+      } else if (cityLength == 4) {
+        setCity(cityName.split(',')[1])
+      } else if (cityLength == 5) {
+        setCity(cityName?.split(',')[2])
+      } else {
+        setCity("Somewhere in the world")
+      }
+    }
+
+
     const googleUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${process.env.VITE_API_KEY}`;
-    //const googleUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${MOCK_COORDS[4].coords.latitude},${MOCK_COORDS[4].coords.longitude}&key=${process.env.VITE_API_KEY}`;
+    //const googleUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${MOCK_COORDS[3].coords.latitude},${MOCK_COORDS[3].coords.longitude}&key=${process.env.VITE_API_KEY}`;
 
     const response = await fetch(googleUrl);
     const jsonData = await response.json();
     const cityName = jsonData.results[0]?.formatted_address ?? '';
-    console.log('City full name:', cityName)
-    console.log(cityName?.split(',').length < 5 ? cityName?.split(',')[1] : cityName?.split(',')[2] ?? 'Somewhere in the world')
-    setCity(cityName?.split(',').length < 5 ? cityName?.split(',')[1] : cityName?.split(',')[2] ?? 'Somewhere in the world')
+    console.log(cityName)
+    getCityName(cityName)
   }
 
   return (
