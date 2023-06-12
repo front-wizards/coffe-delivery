@@ -1,0 +1,7 @@
+{
+    "filetypes": [".js", ".html", ".css"],
+    "directory": "/dist",
+    "algorithms": ["gz"],
+    "retainUncompressedFiles": false,
+    "asynchronousCompression": true
+  }
