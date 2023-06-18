@@ -1,4 +1,5 @@
 import { BsCartCheckFill } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 
 import Picture from '../Picture/Picture'
@@ -9,11 +10,13 @@ export const Header = () => {
   return (
     <StyledHeaderContainer>
         <StyledHeaderLogo >
-            <Picture
+            <Link to="/">
+              <Picture
                 isBig={false}
                 image="Logo.png"
                 dimensions={{width: 100, height: 50}}
-                />
+              />
+            </Link>
         </StyledHeaderLogo>
         <StyledHeaderCart>
             <div className="box-purple">

@@ -6,6 +6,7 @@ export const StyledHeaderContainer = styled.header`
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 32px 0 32px 0;
     white-space: nowrap;
     @media only screen and (max-width: 1100px) {

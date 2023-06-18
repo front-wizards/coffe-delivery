@@ -7,16 +7,14 @@ import PageNotFound from "./pages/NotFound/NotFound";
 import DefaultLayout from "./Layouts/DefaultLayout";
 
 
-const PATH = import.meta.env.PROD ? process.env.VITE_BASE_PATH : '';
-
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={`${PATH}/`} element={<DefaultLayout />} >
-          <Route path={`${PATH}/`} element={<Home />} />
-          <Route path={`${PATH}/checkout`} element={<Checkout />} />
-          <Route path={`${PATH}/success`} element={<Success />} />
+        <Route path="/" element={<DefaultLayout />} >
+          <Route path="/" element={<Home />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/success" element={<Success />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
