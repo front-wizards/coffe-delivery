@@ -6,6 +6,7 @@ export const StyledHeaderContainer = styled.header`
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 32px 0 32px 0;
     white-space: nowrap;
     @media only screen and (max-width: 1100px) {
@@ -34,10 +35,12 @@ export const StyledHeaderCart= styled.div`
     justify-content: flex-end;
     width: 200px;
 
-    span {
+    div {
+        display: flex;
+        justify-content: center;
         cursor: pointer;
-        margin-left: 20px;
         font-weight: 100;
+        margin: 0 0 0 5px;
     }
 
     & .box-purple {

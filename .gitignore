@@ -30,3 +30,5 @@ coverage/
 *.lcov
 
 .env
+.env.production
+.env.test
